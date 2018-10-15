@@ -14,7 +14,6 @@ done
 exemple d'usage : 
 ```
 $ awk -f verifCode.awk monfichier.c
-awk: verifCode.awk:5: avertissement : séquence d'échappement « \* » traitée comme un simple « * »
 report verif code :  monfichier.c
   1 2.5 BEGIN LINE EMPTY     :<
   5 2.1 LG>80                :aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaax<
