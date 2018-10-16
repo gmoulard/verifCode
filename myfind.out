@@ -1,0 +1,180 @@
+$ ./az.sh
+report verif code :  /home/gaym6331/epita/ING1/s5/project/moular_b-myfind/src/errors.c
+ 10 7.12 keyword SPACE AFTER :            break;<
+ 13 7.12 keyword SPACE AFTER :            break;<
+ 16 7.12 keyword SPACE AFTER :            break;<
+ 19 7.12 keyword SPACE AFTER :            break;<
+ 20 7.12 keyword SPACE AFTER :        default:<
+nbPbs:  5
+report verif code :  /home/gaym6331/epita/ING1/s5/project/moular_b-myfind/src/exec.c
+  7 7.2 decl.point * MUST NEX:    char **arg = malloc(len * sizeof(char*));<
+  8 6.4 braces.indent        :    *expr=(*expr)->next;<
+  9 7.16 exp.nopadding -> NUL:    while (*expr != NULL && my_strcmp(";", (*expr)->val) != 0)<
+ 14 7.2 decl.point * MUST NEX:            arg = realloc(arg, len * sizeof(char*));<
+ 16 6.2 braces.close         :if(my_strcmp("{}",(*expr)->val)==0)<
+ 16 6.3 braces.open          :        if (my_strcmp("{}", (*expr)->val) == 0)<
+ 19 7.19 exp.args            :            arg[pos++] = (*expr)->val;<
+ 20 6.4 braces.indent        :        *expr=(*expr)->next;<
+ 28 6.4 braces.indent        :    *expr=(*expr)->next;<
+ 35 7.12 keyword SPACE AFTER :    int child_pid = fork();<
+ 45 7.12 keyword SPACE AFTER :        errx(1, "error on fork");<
+ 59 7.19 exp.args            :            || (arg == 'c' && S_IFCHR  == (st.st_mode & S_IFMT))<
+ 60 7.19 exp.args            :            || (arg == 'f' && S_IFREG  == (st.st_mode & S_IFMT))<
+ 61 7.19 exp.args            :            || (arg == 'p' && S_IFIFO  == (st.st_mode & S_IFMT))<
+ 62 7.19 exp.args            :            || (arg == 's' && S_IFSOCK == (st.st_mode & S_IFMT))<
+ 63 7.19 exp.args            :            || (arg == 'd' && S_ISDIR(st.st_mode))<
+ 64 7.19 exp.args            :            || (arg == 'l' && S_ISLNK(st.st_mode)));<
+nbPbs:  17
+report verif code :  /home/gaym6331/epita/ING1/s5/project/moular_b-myfind/src/exec.h
+  7 6.4 braces.indent        : * return the argument list to be exevp<
+ 12 6.4 braces.indent        : * execute the program without killing the main process<
+ 17 6.4 braces.indent        : * return true if the dir_name mach math<
+ 18 7.21 ctrl.indentation    : * */<
+nbPbs:  4
+report verif code :  /home/gaym6331/epita/ING1/s5/project/moular_b-myfind/src/helper.c
+nbPbs:  0
+report verif code :  /home/gaym6331/epita/ING1/s5/project/moular_b-myfind/src/helper.h
+  5 6.4 braces.indent        : * min return the minimal value between a and b.<
+nbPbs:  1
+report verif code :  /home/gaym6331/epita/ING1/s5/project/moular_b-myfind/src/list.c
+ 25 7.16 exp.nopadding -> NUL:    res->val = NULL;<
+ 26 7.16 exp.nopadding -> NUL:    res->next = NULL;<
+ 34 7.16 exp.nopadding -> NUL:    res->next = NULL;<
+ 56 7.12 keyword SPACE AFTER :        return;<
+ 63 7.12 keyword SPACE AFTER :    struct list *res = new_list_empty();<
+ 68 7.16 exp.nopadding -> NUL:        if (l->val != NULL)<
+nbPbs:  6
+report verif code :  /home/gaym6331/epita/ING1/s5/project/moular_b-myfind/src/list.h
+  8 6.2 braces.close         :};<
+ 11 6.4 braces.indent        : * add adds an element on top of the list.<
+ 12 6.4 braces.indent        : * value -> value of the element to add.<
+ 13 6.4 braces.indent        : * prev  -> olf top of the list.<
+ 18 6.4 braces.indent        : * pop remove the head and output it's value;<
+ 23 6.4 braces.indent        : * new_list_empty initiate a new empty list with no value.<
+ 23 7.12 keyword SPACE AFTER : * new_list_empty initiate a new empty list with no value.<
+ 28 6.4 braces.indent        : * new_list initiate a new empty list with a value (value).<
+ 28 7.12 keyword SPACE AFTER : * new_list initiate a new empty list with a value (value).<
+ 33 6.4 braces.indent        : * len_list return the lenght of the list.<
+ 38 6.4 braces.indent        : * print_list output to stdout the content of the list.<
+ 39 6.4 braces.indent        : * Don't forget to add a trailing '\n' after.<
+ 39 7.12 keyword SPACE AFTER : * Don't forget to add a trailing '\n' after.<
+ 44 6.4 braces.indent        : * ! Warning Explicit!<
+ 45 6.4 braces.indent        : * free_list free the list.<
+nbPbs:  15
+report verif code :  /home/gaym6331/epita/ING1/s5/project/moular_b-myfind/src/myfind.c
+ 10 7.12 keyword SPACE AFTER :    while (this != NULL && this->val != NULL)<
+ 10 7.16 exp.nopadding -> NUL:    while (this != NULL && this->val != NULL)<
+ 12 7.12 keyword SPACE AFTER :        if (my_strcmp("-a", this->val) == 0)<
+ 14 7.16 exp.nopadding -> NUL:            if (this->next->next == NULL) //error<
+ 16 7.12 keyword SPACE AFTER :            this = this->next;<
+ 19 7.12 keyword SPACE AFTER :        else if (my_strcmp("-o", this->val) == 0)<
+ 21 7.16 exp.nopadding -> NUL:            if (this->next->next == NULL) //error<
+ 23 7.12 keyword SPACE AFTER :            this = this->next;<
+ 26 7.12 keyword SPACE AFTER :        else if (my_strcmp("-name", this->val) == 0)<
+ 32 7.12 keyword SPACE AFTER :            this = this->next->next;<
+ 35 7.12 keyword SPACE AFTER :        else if (my_strcmp("-type", this->val) == 0)<
+ 39 7.12 keyword SPACE AFTER :            this = this->next->next;<
+ 42 7.12 keyword SPACE AFTER :        else if (my_strcmp("-print", this->val) == 0)<
+ 47 7.12 keyword SPACE AFTER :            this = this->next;<
+ 50 7.12 keyword SPACE AFTER :        else if (my_strcmp("-exec", this->val) == 0)<
+ 54 7.12 keyword SPACE AFTER :            this = this->next->next;<
+ 57 7.12 keyword SPACE AFTER :        else if (my_strcmp("-execdir", this->val) == 0)<
+ 63 7.12 keyword SPACE AFTER :            this = this->next->next;<
+ 66 7.12 keyword SPACE AFTER :        else if ((my_strcmp("-d", this->val) == 0)<
+ 67 7.12 keyword SPACE AFTER :                || (my_strcmp("-H", this->val) == 0)<
+ 67 7.19 exp.args            :                || (my_strcmp("-H", this->val) == 0)<
+ 67 7.21 ctrl.indentation    :                || (my_strcmp("-H", this->val) == 0)<
+ 68 7.12 keyword SPACE AFTER :                || (my_strcmp("-L", this->val) == 0)<
+ 68 7.19 exp.args            :                || (my_strcmp("-L", this->val) == 0)<
+ 69 7.12 keyword SPACE AFTER :                || (my_strcmp("-P", this->val) == 0)<
+ 69 7.19 exp.args            :                || (my_strcmp("-P", this->val) == 0)<
+ 70 7.12 keyword SPACE AFTER :                || (my_strcmp("-type", this->val) == 0)<
+ 70 7.19 exp.args            :                || (my_strcmp("-type", this->val) == 0)<
+ 71 7.12 keyword SPACE AFTER :                || (my_strcmp("-name", this->val) == 0))<
+ 71 7.19 exp.args            :                || (my_strcmp("-name", this->val) == 0))<
+ 72 6.3 braces.open          :        {<
+ 73 7.12 keyword SPACE AFTER :            this = this->next;<
+ 78 7.12 keyword SPACE AFTER :            errx(1, "unknown predicate '%s'", this->val);<
+ 79 7.12 keyword SPACE AFTER :            this = this->next;<
+101 6.4 braces.indent        :                || my_strcmp(".", dir->d_name) == 0)<
+101 7.21 ctrl.indentation    :                || my_strcmp(".", dir->d_name) == 0)<
+102 7.12 keyword SPACE AFTER :            continue;<
+113 7.12 keyword SPACE AFTER :            continue;<
+118 6.4 braces.indent        :                && my_strcmp(".", dir->d_name) != 0<
+118 7.21 ctrl.indentation    :                && my_strcmp(".", dir->d_name) != 0<
+119 6.4 braces.indent        :                && my_strcmp("..", dir->d_name) != 0)<
+120 6.3 braces.open          :        {<
+131 7.12 keyword SPACE AFTER :    struct list *dirs = new_list_empty();<
+135 7.12 keyword SPACE AFTER :    struct list *expr = new_list_empty();<
+152 7.16 exp.nopadding -> NUL:        else if (dirs->val == NULL)<
+161 7.16 exp.nopadding -> NUL:    if (dirs->val == NULL)<
+172 7.12 keyword SPACE AFTER :            continue;<
+nbPbs:  47
+report verif code :  /home/gaym6331/epita/ING1/s5/project/moular_b-myfind/src/myfind.h
+ 41 6.2 braces.close         :};<
+nbPbs:  1
+report verif code :  /home/gaym6331/epita/ING1/s5/project/moular_b-myfind/src/str.c
+ 86 7.12 keyword SPACE AFTER :    for(size_t tmp_pos = 0; tmp_pos < l_b; tmp_pos++)<
+112 7.7 comma SPACE AFTER, CO:    // printf("DEBUG: '%s'(%ld) '%s'(%ld) '%s'(%ld)\n",<
+nbPbs:  2
+report verif code :  /home/gaym6331/epita/ING1/s5/project/moular_b-myfind/src/str.h
+  5 6.4 braces.indent        : * my_strlen return the lenght of the string<
+  9 6.4 braces.indent        : * my_strcmp compares teh two strings. Return an int less than, equal to, or<
+ 10 6.4 braces.indent        : * greater than zero if the first string is found, respectively, to be less<
+ 11 6.4 braces.indent        : * than, to match, or be greater the the second one.<
+ 11 7.21 ctrl.indentation    : * than, to match, or be greater the the second one.<
+ 16 6.4 braces.indent        : * my_strcnpy copies the string "source" to "dest" for at most "num" bytes;<
+ 21 6.4 braces.indent        : * my_strstr finds the first occurrence of the substring needle in the string<
+ 22 6.4 braces.indent        : * haystack. The terminating null bytes ('\0') are not compared.<
+ 27 6.4 braces.indent        : * my_strcat concatenate str1 and str2 and return the result.<
+ 32 6.4 braces.indent        : * build_pref_name return the value of the next prefix:<
+ 33 6.4 braces.indent        : * prefix   -> is the old prefix<
+ 34 6.4 braces.indent        : * dir_name -> is the directory name<
+ 35 6.4 braces.indent        : * return '<prefix><dir_name>/'<
+ 40 6.4 braces.indent        : * build_full_name return the full directory name like<
+ 41 6.4 braces.indent        : * return pwd + "/" + prefix[2:] + dir_name<
+nbPbs:  15
+report verif code :  /home/gaym6331/epita/ING1/s5/project/moular_b-myfind/src/test.c
+ 15 7.12 keyword SPACE AFTER :    for(size_t tmp_pos = 0; tmp_pos < l_b; tmp_pos++)<
+ 26 6.4 braces.indent        :             filename, "Could not open the directory");<
+ 27 7.12 keyword SPACE AFTER :        return;<
+ 39 6.4 braces.indent        :            && strcmp(".", dir->d_name) != 0<
+ 39 7.21 ctrl.indentation    :            && strcmp(".", dir->d_name) != 0<
+ 40 6.4 braces.indent        :            && strcmp("..", dir->d_name) != 0)<
+ 47 7.12 keyword SPACE AFTER :    struct list *dirs = new_list_empty();<
+ 51 7.12 keyword SPACE AFTER :    struct list *expr = new_list_empty();<
+ 68 7.16 exp.nopadding -> NUL:        else if (dirs->val == NULL)<
+ 75 7.16 exp.nopadding -> NUL:    if (dirs->val == NULL)<
+nbPbs:  10
+report verif code :  /home/gaym6331/epita/ING1/s5/project/moular_b-myfind/src/tree.c
+  7 7.16 exp.nopadding -> NUL:    t->left = NULL;<
+  8 7.16 exp.nopadding -> NUL:    t->right = NULL;<
+ 15 7.12 keyword SPACE AFTER :        return;<
+ 24 7.12 keyword SPACE AFTER :        return;<
+ 35 6.2 braces.close         :printf("graph%s{\n",treename);<
+ 35 6.3 braces.open          :    printf("graph %s {\n", treename);<
+ 36 7.21 ctrl.indentation    :    print_tree_dot_rec(t);<
+ 37 6.2 braces.close         :printf("}\n");<
+ 44 7.12 keyword SPACE AFTER :        return;<
+nbPbs:  9
+report verif code :  /home/gaym6331/epita/ING1/s5/project/moular_b-myfind/src/tree.h
+  9 6.2 braces.close         :};<
+ 12 6.4 braces.indent        : * new_tree initate a new tree with value as root value. Value can be set to<
+ 12 7.12 keyword SPACE AFTER : * new_tree initate a new tree with value as root value. Value can be set to<
+ 13 6.4 braces.indent        : * NULL.<
+ 18 6.4 braces.indent        : * print_tree is a really simple was to visualize the tree<
+ 19 7.19 exp.args            : * (you might want to use print_tree_dot())<
+ 24 6.4 braces.indent        : * print_tree_dot output the tree in a .dot format (usefull with graphviz).<
+ 24 7.12 keyword SPACE AFTER : * print_tree_dot output the tree in a .dot format (usefull with graphviz).<
+ 24 7.19 exp.args            : * print_tree_dot output the tree in a .dot format (usefull with graphviz).<
+ 25 6.4 braces.indent        : * t        -> tree to output<
+ 26 6.4 braces.indent        : * treename -> tree name (usefull in .dot format).<
+ 26 7.12 keyword SPACE AFTER : * treename -> tree name (usefull in .dot format).<
+ 26 7.19 exp.args            : * treename -> tree name (usefull in .dot format).<
+ 31 6.4 braces.indent        : * ! Warning Explicit!<
+ 32 6.4 braces.indent        : * free_tree free the tree.<
+nbPbs:  15
+report verif code :  /home/gaym6331/epita/ING1/s5/project/moular_b-myfind/src/xprs.c
+ 11 7.12 keyword SPACE AFTER :            break;<
+ 19 7.12 keyword SPACE AFTER :            break;<
+nbPbs:  2
