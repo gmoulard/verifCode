@@ -13,10 +13,12 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaax
 
 5.2
 #else
-//comment 
+    //comment 
 
 #else
     #endif
+head -> next = NULL;
+
 
 #include "iso9660.h"
   #include "my_read_iso.h"
@@ -43,12 +45,12 @@ int print_help(void)
     return 0;
 }
 
-int print_info(void *p) 
-    {
+int print _info (void *p , char* guigui) 
+{
     char *tmp = p;
     struct iso_prim_voldesc *iso = to_void(tmp + HEADER_NB_SECTOR * PAGE_SIZE);
-    printf("System Identifier: %.*s\n", ISO_SYSIDF_LEN,iso->syidf);
-    printf("Volume Identifier: %.*s\n", ISO_VOLIDF_LEN,iso->vol_idf);
+    printf( "System Identifier: %.*s\n", ISO_SYSIDF_LEN,iso->syidf);
+    printf("Volume Identifier: %.*s\n", ISO_VOLIDF_LEN,iso->vol_idf );
     printf("Block count: %d\n", iso->vol_blk_count.le);
     printf("Block size: %d\n", iso->vol_blk_size.le);
     printf("Creation date: %.*s\n", ISO_LDATE_LEN,iso->date_creat);
@@ -64,15 +66,16 @@ int print_undef(void)
 
 int my_errx(int code, char *msg)
 {
-   fprintf(stderr, "%s\n", msg);
+    fprintf(stderr, "%s\n", msg);
    return code;
 }
 
 int my_warnx(int code, char *msg)
 {
-   fprintf(stderr, "my_read_iso: %s: unknown command\n", msg);
-   return code;
+    fprintf(stderr, "my_read_iso: %s: unknown command\n", msg);
+    return code;
 }
+
 
 void *read_iso(char *filename)
 {
@@ -83,7 +86,7 @@ void *read_iso(char *filename)
         return NULL;
     struct stat sa;
     if (fstat(n, &sa) == -1)
-            return NULL;
+        return NULL;
     void *p = mmap(NULL, sa.st_size, PROT_READ, MAP_PRIVATE,
                     n, 0);
     char *tmp = p;
@@ -128,15 +131,18 @@ int main(int argc, char *argv[]){
     while (1)
     {
         if (isatty(STDIN_FILENO))
-            printf("> ");
+            printf ("> ");
         res = scanf("%s", arg);
         if (res < 1 || res == EOF)
-            return 0;
-        res = parse_responce(arg, iso);
+            return0;
+        res = parse_responce(arg, e iso) ;
+        res = parse_responce(arg,e iso);
         if (res != 0)
             return res;
     }
     return 0;
 }
 
-
+char[234234] toto
+char[AZEDSQzae] toto    
+char[CONST ER] toto

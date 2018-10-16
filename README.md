@@ -3,7 +3,7 @@
 
 appel sur une directory
 #!/bin/bash
-for i in ../epita/ING1/s5/project/moular_b-myfind/src/*
+for i in ../.../moular_b-myfind/src/*
 do
       awk -f verifCode.awk $i
 done
